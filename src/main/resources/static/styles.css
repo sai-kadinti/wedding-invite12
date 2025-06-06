@@ -1,0 +1,13 @@
+body {
+    background-color: #fff8dc;
+    font-family: 'Noto Sans Telugu', sans-serif;
+    color: #800000;
+    text-align: center;
+    padding: 50px;
+}
+.invitation {
+    border: 4px double #800000;
+    padding: 30px;
+    background-color: #fff0f5;
+    border-radius: 20px;
+}
