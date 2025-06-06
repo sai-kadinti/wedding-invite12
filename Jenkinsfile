@@ -21,7 +21,7 @@ pipeline
         {
             steps
             {
-                sh 'scp /var/lib/jenkins/workspace/wedd/target/wedding-invitation-1.0-SNAPSHOT.war ubuntu@172.31.87.13:/var/lib/tomcat10/webapps/test.war'
+                sh 'sudo scp /var/lib/jenkins/workspace/wedd/target/wedding-invitation-1.0-SNAPSHOT.war ubuntu@172.31.87.13:/var/lib/tomcat10/webapps/test.war'
             }
         }
     }
