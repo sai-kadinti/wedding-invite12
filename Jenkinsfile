@@ -21,7 +21,7 @@ pipeline
         {
             steps
             {
-                sh 'scp /var/lib/jenkins/workspace/wedding/target/wedding-invitation-1.0-SNAPSHOT.war ubuntu@172.31.87.13:/var/lib/tomcat10/webapps/test.war'
+                deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: '1c5bbabc-311e-4c9c-a834-441d8cc64ebe', path: '', url: 'http://172.31.87.13:8888/')], contextPath: 'test', war: '**/*.war'
             }
         }
     }
