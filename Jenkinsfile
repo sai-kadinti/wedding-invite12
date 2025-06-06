@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-                git 'https://github.com/sai-kadinti/wedding-invite.git'
+                git 'https://github.com/sai-kadinti/wedding-invite12.git'
             }
         }
         stage ('Build')
