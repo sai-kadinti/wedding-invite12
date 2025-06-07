@@ -6,14 +6,14 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class WeddingInviteApplication extends SpringBootServletInitializer {
+public class InvitationController extends SpringBootServletInitializer {
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(WeddingInviteApplication.class);
+        return builder.sources(InvitationController.class);
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(WeddingInviteApplication.class, args);
+        SpringApplication.run(InvitationController.class, args);
     }
 }
