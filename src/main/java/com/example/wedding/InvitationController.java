@@ -1,19 +1,13 @@
 package com.example.wedding;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
-@SpringBootApplication
-public class InvitationController extends SpringBootServletInitializer {
+@Controller
+public class InvitationController {
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(InvitationController.class);
-    }
-
-    public static void main(String[] args) {
-        SpringApplication.run(InvitationController.class, args);
+    @GetMapping("/")
+    public String showInvitation() {
+        return "index";  // Loads templates/index.html
     }
 }
